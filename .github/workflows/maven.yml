@@ -17,4 +17,4 @@ jobs:
         run: mvn clean install
 
       - name: Build the Docker image
-        run: docker build -t hassaneid/java:v${{ GITHUB_RUN_NUMBER }} .
+        run: docker build -t hassaneid/java:v${{ github.run_number }} .
